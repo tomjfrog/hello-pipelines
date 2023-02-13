@@ -2,7 +2,7 @@ template: true   # required for local templates
 valuesFilePath: ./pipeline-config.yml
 
 resources:
-  - name: myFirstRepo
+  - name: hello-pipelines-repo
     type: GitRepo
     configuration:
       # SCM integration where the repository is located
@@ -13,7 +13,7 @@ resources:
         # Specifies which branches will trigger dependent steps
         include: main
 
-  - name: myPropertyBag
+  - name: hello-pipelines-property-bag
     type: PropertyBag
     configuration:
       commitSha: 1
